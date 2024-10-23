@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Clase I</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.jpeg">
+
+    <!-- Fuentes para el programa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo-prinsipal">Sistemas Tuberias Clase I</h1>
+    <div class="contenedor-puntos">
+        <div class="contenedor-punto p1">
+            <h3>Punto 1</h3>
+            <select class="lis-selecc-parametros">
+                <option value="Con caudal (Q)">Con caudal (Q)</option>
+                <option value="Con velocidad (V)">Con velocidad (V)</option>
+            </select>
+
+            <div class="contenedor-variables">
+                <div class="parametro">
+                    <label class="lab-entra">P1 (Pa): </label>
+                    <input type="text" class="entrada-presion entrd-conten">
+                </div>
+                <div class="parametro">
+                    <label class="lab-entra">Z1 (m): </label>
+                    <input type="text" class="entrada-elevacion entrd-conten ">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-punto">
+            <h3>Punto 2</h3>
+            <select class="lis-selecc-parametros ">
+                <option value="Con caudal (Q)">Con caudal (Q)</option>
+                <option value="Con velocidad (V)">Con velocidad (V)</option>
+            </select>
+
+            <div class="contenedor-variables">
+                <div class="parametro">
+                    <label class="lab-entra">P2 (Pa): </label>
+                    <input type="text" class="entrada-presion entrd-conten">
+                </div>
+                <div class="parametro">
+                    <label class="lab-entra">Z2 (m): </label>
+                    <input type="text" class="entrada-elevacion entrd-conten">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-otros-para">
+        <div class="entradas-extr">
+            <div class="contenedor-param">
+                <label class="labe-prog">Material de Tuberia: </label>
+                <select class="mat-tube "></select>
+            </div>  
+
+            <div class="contenedor-param">
+                <label class="labe-prog">Q (m3 / s): </label>
+                <input type="text" class="entrada-caudal">
+            </div>
+            
+            <div class="contenedor-param">
+                <label class="labe-prog">Tempetatura Agua(°C): </label>
+                <select class="lis-tem-agu"></select>
+            </div>
+
+            <div class="contenedor-param">
+                <label class="labe-prog">Eficiencia (%): </label>
+                <input type="text" class="entrada-eficiencia">
+            </div>
+        </div>
+       
+        <div class="parametros-tramo">
+            <h3>Tramo 1</h3>
+            <label class="lab-en">D (m): </label>
+            <input type="text" class="entrada-diam en-com"> <br><br>
+            <label class="lab-en">L (m): </label>
+            <input type="text" class="entrada-long en-com">
+            
+            <div class="contenedor-botones">
+                <button class="boton-siguiente-tramos boton-cal">Siguiente Tramo</button>
+                <button class="boton-calcular boton-cal">Calcular</button>
+            </div>
+
+            <div class="resultados">
+                <p>Resultado: </p>
+                <div class="res-real">
+
+                </div>
+            </div>
+            
+            <div class="contenedor-acces">
+                <h3>Accesorios sistema</h3>
+                <ul class="lista-ime">
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
